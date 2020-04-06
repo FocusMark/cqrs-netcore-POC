@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aa159169-c206-468e-8f6b-aba4b82dc717</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".repl\newProjectCommand.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWS.Logger.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="AWSXRayRecorder.Handlers.AspNetCore" Version="2.6.2" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.105.24" />
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.3.101.146" />
+    <PackageReference Include="AWSXRayRecorder.Handlers.AwsSdk" Version="2.7.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Domain\Src\FocusMark.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Src\Server.Shared.csproj" />
+  </ItemGroup>
+</Project>
